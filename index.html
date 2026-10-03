@@ -10,66 +10,119 @@
             background: linear-gradient(135deg, #f4f7f6, #e2e8f0);
             color: #333;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 15px;
             margin: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
         }
         .card {
             background: white;
-            padding: 40px;
+            padding: 30px;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            max-width: 600px;
-            margin: auto;
+            margin-bottom: 20px;
         }
-        h1 { color: #1e293b; margin-bottom: 10px; }
-        .subtitle { color: #0ea5e9; font-weight: bold; margin-bottom: 20px; }
-        p { color: #64748b; line-height: 1.8; }
+        h1 { color: #1e293b; margin-bottom: 5px; }
+        .subtitle { color: #0ea5e9; font-weight: bold; margin-bottom: 15px; }
+        p { color: #64748b; line-height: 1.8; font-size: 15px; }
+        
         .skills {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         .tag {
             background: #f1f5f9;
             color: #334155;
-            padding: 6px 14px;
+            padding: 5px 12px;
             border-radius: 20px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: bold;
         }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .project-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: right;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+        .project-desc {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 10px;
+        }
+
         .btn {
             display: inline-block;
             background: #0ea5e9;
             color: white;
-            padding: 10px 25px;
-            border-radius: 25px;
+            padding: 8px 20px;
+            border-radius: 20px;
             text-decoration: none;
-            margin-top: 15px;
+            font-size: 14px;
             transition: background 0.3s;
         }
         .btn:hover { background: #0284c7; }
+        .btn-small {
+            padding: 4px 12px;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>مرحباً، أنا بتول 👩‍💻</h1>
-        <div class="subtitle">طالبة علوم حاسب وتطوير الويب</div>
-        <p>أخطو خطواتي الأولى بشغف في عالم البرمجة، وأبني مشاريعي البرمجية خطوة بخطوة.</p>
-        
-        <p><strong>مهاراتي التقنية:</strong></p>
-        <div class="skills">
-            <span class="tag">Python</span>
-            <span class="tag">Java</span>
-            <span class="tag">SQL</span>
-            <span class="tag">HTML/CSS</span>
+    <div class="container">
+        <!-- الكرت الرئيسي -->
+        <div class="card">
+            <h1>مرحباً، أنا بتول 👩‍💻</h1>
+            <div class="subtitle">طالبة علوم حاسب وتطوير الويب</div>
+            <p>أخطو خطواتي الأولى بشغف في عالم البرمجة، وأبني مشاريعي البرمجية خطوة بخطوة.</p>
+            
+            <p><strong>مهاراتي التقنية:</strong></p>
+            <div class="skills">
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">SQL</span>
+                <span class="tag">HTML/CSS</span>
+            </div>
+
+            <a href="https://github.com/BatoolTech" target="_blank" class="btn">زيارة حسابي على GitHub</a>
         </div>
 
-        <p>ترقبوا المزيد من المشاريع والألعاب البرمجية القادمة!</p>
-        
-        <a href="https://github.com/BatoolTech" target="_blank" class="btn">زيارة حسابي على GitHub</a>
+        <!-- كرت المشاريع -->
+        <div class="card" style="text-align: right;">
+            <h2 style="color: #1e293b; font-size: 20px; text-align: center; margin-bottom: 15px;">مشاريعي البرمجية 🚀</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">لعبة الأسئلة (Python Quiz)</div>
+                    <div class="project-desc">لعبة تفاعلية برمجية تختبر المعلومات العامة باستخدام لغة بايثون.</div>
+                    <a href="https://github.com/BatoolTech" target="_blank" class="btn btn-small">عرض الكود</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">إدارة قواعد البيانات (SQL Server)</div>
+                    <div class="project-desc">تصميم وتنفيذ جداول واستعلامات قواعد بيانات متكاملة.</div>
+                    <a href="https://github.com/BatoolTech" target="_blank" class="btn btn-small">عرض الكود</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
