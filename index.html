@@ -3,34 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي الشخصي - علوم حاسب</title>
+    <title>بتول القحطاني | بورتفوليو علوم حاسب</title>
     <style>
         body {
             font-family: Tahoma, sans-serif;
-            background-color: #f4f7f6;
+            background: linear-gradient(135deg, #f4f7f6, #e2e8f0);
             color: #333;
             text-align: center;
-            padding: 50px;
+            padding: 40px 20px;
+            margin: 0;
         }
         .card {
             background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            max-width: 500px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            max-width: 600px;
             margin: auto;
         }
-        h1 { color: #2c3e50; }
-        p { color: #7f8c8d; line-height: 1.6; }
+        h1 { color: #1e293b; margin-bottom: 10px; }
+        .subtitle { color: #0ea5e9; font-weight: bold; margin-bottom: 20px; }
+        p { color: #64748b; line-height: 1.8; }
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .tag {
+            background: #f1f5f9;
+            color: #334155;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: #0ea5e9;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background:- #0284c7; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>مرحباً بك في موقعي! 👩‍💻</h1>
-        <p>أنا طالبة علوم حاسب أخطو خطواتي الأولى في عالم البرمجة وتطوير الويب.</p>
-        <p><strong>مهاراتي الحالية:</strong> Python, Java, SQL</p>
-        <p>ترقبوا المزيد من المشاريع قريباً على GitHub!</p>
+        <h1>مرحباً، أنا بتول 👩‍💻</h1>
+        <div class="subtitle">طالبة علوم حاسب وتطوير الويب</div>
+        <p>أخطو خطواتي الأولى بشغف في عالم البرمجة، وأبني مشاريعي البرمجية خطوة بخطوة.</p>
+        
+        <p><strong>مهاراتي التقنية:</strong></p> تخطو
+        <div class="skills">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML/CSS</span>
+        </div>
+
+        <p>ترقبوا المزيد من المشاريع والألعاب البرمجية القادمة!</p>
+        
+        <a href="https://github.com/BatoolTech" target="_blank" class="btn">زيارة حسابي على GitHub</a>
     </div>
 
 </body>
